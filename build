@@ -1,1 +1,1 @@
-docker build -t dev_apache2 .
+docker build -t apache2 .

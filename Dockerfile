@@ -33,7 +33,9 @@ RUN apt-get update && \
     docker-php-ext-enable apcu && \
     pecl install redis && \
     docker-php-ext-enable redis && \
+    docker-php-ext-enable opcache && \
     apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/*
 
-
+# php.ini source: https://github.com/php/php-src/blob/master/php.ini-production
+COPY php.ini /usr/local/etc/php/
