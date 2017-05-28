@@ -1,5 +1,10 @@
 FROM php:7.0.19-apache
 
+LABEL description="Hedgehog Cloud by www.eigener-server.ch https://www.eigener-server.ch/en/igel-cloud \
+                   is licensed under a Creative Commons Attribution 4.0 International Lizenz \
+                   http://creativecommons.org/licenses/by/4.0/ \
+                   To remove the links visit https://www.eigener-server.ch/en/igel-cloud"
+
 # Install gd iconv und mcrypt für captcha erstellung mit PHP (nur GD wird aktuell benötigt)
 RUN apt-get update && \
     apt-get install -y \
