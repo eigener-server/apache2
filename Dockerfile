@@ -1,4 +1,4 @@
-FROM php:7.0.26-apache
+FROM php:7.3-apache 
 
 LABEL description="Hedgehog Cloud by www.eigener-server.ch https://www.eigener-server.ch/en/igel-cloud \
                    is licensed under a Creative Commons Attribution 4.0 International Lizenz \
